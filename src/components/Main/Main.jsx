@@ -42,8 +42,12 @@ function Main() {
             </div>
             <div className="result-data flex items-start gap-3">
               <img className="w-[50px]" src={assets.entity} alt="" />
-              {loading?<div className="loader">loading...</div>
-              :<p dangerouslySetInnerHTML={{ __html: resultData }}></p>}
+              {loading?<div className="loader w-[100%] flex flex-col gap-[10px]">
+                <hr className="border-none rounded-[4px] bg-[#f6f7f8] bg-gradient-to-r from-[#71757c] to-[#eee8e7] h-[20px]"/>
+                <hr className="border-none rounded-[4px] bg-[#f6f7f8] bg-gradient-to-r from-[#eee8e7] to-[#71757c] h-[20px]"/>
+                <hr className="border-none rounded-[4px] bg-[#f6f7f8] bg-gradient-to-r from-[#71757c] to-[#eee8e7] h-[20px]"/>
+              </div>
+              :<p className="text-[20px] font-normal leading-relaxed" dangerouslySetInnerHTML={{ __html: resultData }}></p>}
               
             </div>
           </div>

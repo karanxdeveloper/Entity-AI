@@ -10,7 +10,7 @@ async function main(prompt) {
     model: "gemini-2.0-flash",
     contents: prompt,
   });
-  console.log(response.text);
+  // console.log(response.text);
   return response.text
 }
 
