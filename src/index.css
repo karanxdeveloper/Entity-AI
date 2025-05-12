@@ -2,4 +2,14 @@
 
 #root{
     display: flex;
+    animation: fadeIn 0.9s ease-in;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
